@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01-helloworld/01-helloworld.iml" filepath="$PROJECT_DIR$/01-helloworld/01-helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-classes/02-classes.iml" filepath="$PROJECT_DIR$/02-classes/02-classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-further-classes/03-further-classes.iml" filepath="$PROJECT_DIR$/03-further-classes/03-further-classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-case-and-value/04-case-and-value.iml" filepath="$PROJECT_DIR$/04-case-and-value/04-case-and-value.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scala-intro.iml" filepath="$PROJECT_DIR$/scala-intro.iml" />
+    </modules>
+  </component>
+</project>
