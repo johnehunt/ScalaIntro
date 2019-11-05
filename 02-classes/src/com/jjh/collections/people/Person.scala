@@ -1,11 +1,11 @@
-package com.jjh.people
+package com.jjh.collections.people
 
 /**
  *  A person who uses our application.
  *
  * @constructor create a new person with a name and age.
  * @param name the person's name (immutable)
- * @param age the person's age in years 
+ * @param age the person's age in years which is mutable (its a var)
  */
 class Person(val name: String, var age: Int) { }
 
