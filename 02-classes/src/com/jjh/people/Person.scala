@@ -1,4 +1,4 @@
-package com.jjh.collections.people
+package com.jjh.people
 
 /**
  *  A person who uses our application.

@@ -1,4 +1,4 @@
-package com.jjh.collections.math
+package com.jjh.math
 
 /**
  * Class illustrating some method definitions.

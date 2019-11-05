@@ -1,4 +1,4 @@
-package com.jjh.collections.people
+package com.jjh.people
 
 class Person4(val name: String, var age: Int) {
 
