@@ -5,7 +5,7 @@ class Stack[T] {
   import scala.collection.mutable.ListBuffer
 
   val MAX = 10
-  private var contents = new ListBuffer[T]
+  private val contents = new ListBuffer[T]
 
   def push(o: T) {
     if (!full)
@@ -23,14 +23,14 @@ class Stack[T] {
 
   def peek: T = {
     if (!empty)
-      contents(0)
+      contents.head
     else
       throw new IllegalStateException("Stack Empty")
   }
 
   def full: Boolean = contents.size == MAX
-  def empty: Boolean = contents.size == 0
+  def empty: Boolean = contents.isEmpty
   def size: Int = contents.size
 
-  override def toString = s"Stack(${contents})"
+  override def toString = s"Stack($contents)"
 }

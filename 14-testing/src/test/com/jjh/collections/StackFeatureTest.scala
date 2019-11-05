@@ -1,13 +1,7 @@
 package com.jjh.collections
 
-import org.scalatest.FeatureSpec
-import org.scalatest.GivenWhenThen
-import scala.collection.mutable.Stack
+import org.scalatest._
 
-import org.scalatest.junit.JUnitRunner
-import org.junit.runner.RunWith
-
-@RunWith(classOf[JUnitRunner])
 class StackFeatureTest extends FeatureSpec with GivenWhenThen {
 
   feature("The user can pop an element off the top of the stack") {
@@ -18,35 +12,35 @@ class StackFeatureTest extends FeatureSpec with GivenWhenThen {
 
     scenario("pop is invoked on a non-empty stack") {
 
-      given("a non-empty stack")
+      Given("a non-empty stack")
       val stack = new Stack[Int]
       stack.push(1)
       stack.push(2)
       val oldSize = stack.size
 
-      when("when pop is invoked on the stack")
+      When("when pop is invoked on the stack")
       val result = stack.pop()
 
-      then("the most recently pushed element should be returned")
+      Then("the most recently pushed element should be returned")
       assert(result === 2)
 
-      and("the stack should have one less item than before")
+      And("the stack should have one less item than before")
       assert(stack.size === oldSize - 1)
     }
 
     scenario("pop is invoked on an empty stack") {
 
-      given("an empty stack")
+      Given("an empty stack")
       val emptyStack = new Stack[Int]
 
-      when("when pop is invoked on the stack")
-      then("NoSuchElementException should be thrown")
+      When("when pop is invoked on the stack")
+      Then("NoSuchElementException should be thrown")
       intercept[NoSuchElementException] {
         emptyStack.pop()
       }
 
-      and("the stack should still be empty")
-      assert(emptyStack.isEmpty)
+      And("the stack should still be empty")
+      assert(emptyStack.empty)
     }
   }
 
