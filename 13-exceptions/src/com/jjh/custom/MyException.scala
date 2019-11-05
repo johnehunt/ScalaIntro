@@ -1,5 +1,8 @@
-package com.jjh.collections.custom
+package com.jjh.custom
 
+/**
+ * Custom Exception type.
+ */
 class MyException extends RuntimeException { }
 
 object ExceptionGenerationApp extends App {

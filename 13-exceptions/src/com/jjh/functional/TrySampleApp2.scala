@@ -1,4 +1,4 @@
-package com.jjh.collections.functional
+package com.jjh.functional
 
 import scala.util.Try
 

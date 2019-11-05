@@ -1,9 +1,10 @@
-package com.jjh.collections.exceptions
+package com.jjh.exceptions
 
 object ExceptionTest2 extends App {
   try {
     val r1 = new Rational(5, 3)
     val r2 = r1 + -1
+    println(r2)
   } catch {
     case e: IllegalArgumentException => println("exception illegal argument caught: " + e)
     case e: RuntimeException => println("Runtime Exception" + e)

@@ -1,4 +1,4 @@
-package com.jjh.collections.either
+package com.jjh.either
 
 object EitherSampleApp extends App {
   val u1: Either[Int, String] = Left(1)
