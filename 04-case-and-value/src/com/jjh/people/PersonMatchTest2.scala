@@ -14,7 +14,7 @@ object PersonMatchTest2 {
 
   def describe(x: Any): String = x match {
     case Person("John", 55) => "Dad"
-    case Person("Denise", 53) => "Mum"
+    case Person("Denise", x) => s"Mum is $x"
     case Person(_, y) if y < 18 => "Child"
     case _ => "something else"
   }
