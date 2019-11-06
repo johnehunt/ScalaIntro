@@ -11,11 +11,10 @@ object IfTest extends App {
   println("--------------------")
 
   // But if statements return a value
-  val role =
-    if (name == "John")
-      "Dad"
-    else
-      "No Data"
+  val role = if (name == "John")
+    "Dad"
+  else
+    "No Data"
   println(role)
 
 }
