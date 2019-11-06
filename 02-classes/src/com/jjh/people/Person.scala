@@ -7,7 +7,7 @@ package com.jjh.people
  * @param name the person's name (immutable)
  * @param age the person's age in years which is mutable (its a var)
  */
-class Person(val name: String, var age: Int) { }
+class Person(val name: String, var age: Int)
 
 object TestPersonApp extends App {
   val p1 = new Person(name ="John", age = 55)
