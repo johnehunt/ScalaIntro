@@ -8,8 +8,8 @@ class Person2(val name: String, var age: Int) {
 }
 
 object Person2App extends App {
-  val p1 = new Person2(name = "John", age = 55)
+  val p1 = new Person2("John", 55)
   println(p1.name + " is " + p1.age)
-  val p2 = new Person2(name = "Denise")
+  val p2 = new Person2("Denise")
   println(p2.name + " is " + p2.age)
 }
