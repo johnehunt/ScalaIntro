@@ -1,19 +1,18 @@
-package com.jjh.collections.varargs
+package com.jjh.varargs
 
-object VariableParametersApp {
+object VariableParametersApp extends App {
 
-  def main(args: Array[String]): Unit = {
+  val printer = new Printer
+  printer.echo()
 
-    echo()
+  println("-" * 10)
+  printer.echo("John")
 
-    println("-" * 10)
-    echo("John")
+  println("-" * 10)
+  printer.echo("John", "was", "here")
+}
 
-    println("-" * 10)
-    echo("John", "was", "here")
-
-  }
-
+class Printer {
   /*
    * If last parameter has a trailing * then this can be a variable
    * parameter list - this allows variable length argument lists.
