@@ -9,16 +9,12 @@ import java.util.Date
 class Event(val name: String,
             val date: Option[Date] = None,
             val state: String = "New") {
-  def printDate(): Unit = {
-    date match {
-      case Some(d) => println(d)
-      case None => println("No Date")
-    }
+  def printDate(): Unit = date match {
+    case Some(d) => println(d)
+    case None => println("No Date")
   }
 
-  def printDate2: Unit = {
-    println(date getOrElse "No Date")
-  }
+  def printDate2: Unit = println(date getOrElse "No Date")
 
   override def toString: String = s"Event($name, $date, $state)"
 }
