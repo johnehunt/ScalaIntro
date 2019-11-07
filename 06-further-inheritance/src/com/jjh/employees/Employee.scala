@@ -1,10 +1,11 @@
 package com.jjh.employees
 
-class Person(_name: String = "John", var age: Int = 18) {
+abstract class Person(_name: String = "John", var age: Int = 18) {
   // Override inherited toString
   override def toString: String = s"Person($name, $age)"
 
-  def prettyPrint(): Unit = println("Person")
+  //Define an abstract method
+  def prettyPrint(): Unit
 
   // Concrete getter method
   def name: String = _name
@@ -20,15 +21,15 @@ class Graduate(_name: String,
 
   override def toString: String = "Graduate [" + super.toString() + ", " + degree + "]"
 
-  override def prettyPrint(): Unit =
+  final def prettyPrint(): Unit =
     println(s"Graduate($name, $age, $degree, $institution")
 }
 
-class Employee(n: String,
-               a: Int,
-               val company: String) extends Person(n, a) {
+final class Employee(n: String,
+                     a: Int,
+                     val company: String) extends Person(n, a) {
 
-  override def prettyPrint(): Unit =
+  def prettyPrint(): Unit =
     println(s"Employee(Name: $name, Age: $age, Company: $company")
 
 }
@@ -39,3 +40,4 @@ object Person {
 
   def person(n: String, a: Int, degree: String, uni: String): Person = new Graduate(n, a, degree, uni)
 }
+
