@@ -12,34 +12,25 @@ abstract class Person(_name: String = "John", var age: Int = 18) {
 }
 
 class Graduate(_name: String,
-               age: Int,
-               degree: String,
-               uni: String) extends Person(_name, age) {
-  protected val institution: String = uni
+               _age: Int,
+               val degree: String,
+               _uni: String) extends Person(_name, _age) {
+  protected val institution: String = _uni
 
   def this(n: String, a: Int, degree: String) = this(n, a, degree, "Oxford")
 
   override def toString: String = "Graduate [" + super.toString() + ", " + degree + "]"
 
-  def prettyPrint(): Unit ={
-    println("Graduate")
-    println("\tName: " + _name)
-    println("\tAge: " + age)
-    println("\tDegree: " + degree)
-    println("\tUniversity: " + uni)
-  }
+  final def prettyPrint(): Unit =
+    println(s"Graduate($name, $age, $degree, $institution")
 }
 
-class Employee(n: String,
+final class Employee(n: String,
                a: Int,
-               company: String) extends Person(n, a) {
+               val company: String) extends Person(n, a) {
 
-  final def prettyPrint(): Unit = {
-    println("Employee")
-    println("\tName: " + name)
-    println("\tAge: " + age)
-    println("\tCompany: " + company)
-  }
+  def prettyPrint(): Unit =
+    println(s"Employee(Name: $name, Age: $age, Company: $company")
 
 }
 
