@@ -27,6 +27,9 @@ object ArraysExamplesTest extends App {
   for (i <- 0 to 2)
     print(numberArray(i))
 
+  println()
+  numberArray.foreach(print)
+
   println("\n---------------------------")
 
   // This is equivalent to the following as Scala automatically
