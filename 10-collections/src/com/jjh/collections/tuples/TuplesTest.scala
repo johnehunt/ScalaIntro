@@ -9,16 +9,16 @@ package com.jjh.collections.tuples
  */
 object TuplesTest extends App {
   // Long hand form of a tuple
-  val t1 = Tuple2(1, 2)
+  val t1 = Tuple2(1, "John")
   // Longest hand form of a tuple
   val t2 = new Tuple2[Int, String](1, "John")
 
   // Tuple creation typically use parentheses and a comma
-  val pair = (47, "John")
+  val pair = (55, "John")
   println(pair)
 
   // But can be as simple as
-  val pair2 = 47 -> "John"
+  val pair2 = 55 -> "John"
   println(pair2)
 
   println("-----------------------------------")
