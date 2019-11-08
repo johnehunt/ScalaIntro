@@ -17,7 +17,7 @@ object ListTest1 extends App {
 
   // The list concatenation method that creates a new list
   // based on existing lists
-  val longList = myList0 ::: myList1
+  val longList = myList0 ++ myList1
 
   // The cons method that prepends a new element 
   // to the beginning of a list - takes constant time
