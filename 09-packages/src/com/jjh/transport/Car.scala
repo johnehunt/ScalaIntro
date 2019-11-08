@@ -12,6 +12,11 @@ package com.jjh.transport {
 
     import com.jjh.transport.personal.Bike
 
+    // nesting within a nested package
+    package nested {
+      class WaterTaxi
+    }
+
     class TaxiFleet {
       val c = Car("Skoda", "Octavia")
       val b = new Bike
