@@ -6,7 +6,6 @@ package com.jjh.universal
  */
 trait Printable extends Any {
   def print(): Unit = println(this)
-
 }
 
 /**
