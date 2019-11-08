@@ -22,6 +22,6 @@ object StudentTestApp extends App {
   model.printer()
   val person: Person = student
   println(s"person: $person")
-  val serilizable: Serializable = student
-  println(s"serializable: $serilizable")
+  val serializable: Serializable = student
+  println(s"serializable: $serializable")
 }
