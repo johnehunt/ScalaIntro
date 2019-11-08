@@ -5,11 +5,13 @@ package com.jjh.collections.sets
  */
 object SetTest extends App  {
     // Create an immutable Set
-    var teams = Set("Liverpool", "West Ham", "Newcastle", "Everton")
+    val teams = Set("Liverpool", "West Ham", "Newcastle", "Everton")
     println(teams)
+    println(teams.getClass)
 
-    // Is this the same object?? Whats its type??
-    teams += "Wolves"
-    println(teams)
-    println(teams.contains("West Ham"))
+    // Is  the same object?? Whats its type??
+    val newTeams = teams + "Wolves"
+    println(newTeams)
+    println(newTeams.contains("West Ham"))
+    println(newTeams.getClass)
 }
