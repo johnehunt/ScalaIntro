@@ -1,6 +1,7 @@
 package com.jjh.marker
 
 trait Decorator
+trait Service
 
 // Note immutable is a built in marker trait
 
