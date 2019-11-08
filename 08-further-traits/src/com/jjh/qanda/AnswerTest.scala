@@ -5,4 +5,8 @@ object AnswerTest extends App {
    println(answer)
    answer = No
    println(answer)
+   answer match {
+      case Yes => print("its a yes")
+      case No => print("its a No")
+   }
 }
