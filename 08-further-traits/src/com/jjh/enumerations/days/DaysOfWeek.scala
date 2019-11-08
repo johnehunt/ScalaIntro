@@ -18,7 +18,7 @@ object Test4 extends App {
 }
 
 //object Test3 extends App {
-//  val today = DaysOfWeek.Monday
+//  val today = DaysOfWeek.Thursday
 //  println(today.id)
 //}
 
