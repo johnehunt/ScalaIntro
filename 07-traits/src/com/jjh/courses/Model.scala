@@ -11,9 +11,7 @@ package com.jjh.courses
 trait Model {
   val value: Any
 
-  def printValue() {
-    println(value)
-  }
+  def printValue(): Unit = println(value)
 
   def printer(): Unit
 }
