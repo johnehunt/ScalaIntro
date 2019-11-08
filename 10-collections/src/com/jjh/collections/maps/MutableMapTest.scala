@@ -17,8 +17,8 @@ object MutableMapTest extends App {
   println(map.keys)
   println(map.values)
   println(map.isEmpty)
-  println(map.get("UK"))
-  println(map("UK"))
+  println(map.get("UK")) // Return value for key or None
+  println(map("UK")) // Return value for key or NoSuchElementException
   println(map.contains("UK"))
   println(map.getOrElse("Ireland", "Not known"))
 }

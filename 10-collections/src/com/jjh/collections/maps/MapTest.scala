@@ -2,7 +2,7 @@ package com.jjh.collections.maps
 
 object MapTest extends App {
 
-  // Set iup a map of flight numbers to destinations
+  // Set up a map of flight numbers to destinations
   var flights = Map[Int, String]()
   flights += (121 -> "Miami")
   flights += (231 -> "Dublin")
