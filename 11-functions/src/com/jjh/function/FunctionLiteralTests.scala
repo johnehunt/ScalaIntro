@@ -10,8 +10,8 @@ object FunctionLiteralTests extends App {
   y = increase(y)
   println("Increased y: " + y)
   // Can also assign to another identifier
-  val aaa = increase
-  println("increase using aaa: " + aaa(2))
+  val increment = increase
+  println("increase using increment: " + increment(2))
   // Because increase is a var you can re-assign it
   increase = (x: Int) => x + 99
   y = increase(y)
