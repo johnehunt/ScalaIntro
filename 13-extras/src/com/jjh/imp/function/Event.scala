@@ -1,4 +1,4 @@
-package com.jjh.collections.imp.function
+package com.jjh.imp.function
 
 import java.util.Date
 
@@ -10,7 +10,7 @@ case class Event(name: String, date: Option[Date] = None, state: String = "New")
   def printDate2(): Unit = println(date getOrElse "No date")
 }
 
-// Can use an implicit function to build events and hide the use of options
+// Can use an implicit method to build events and hide the use of options
 object Event {
   implicit def apply(d: Date): Option[Date] = Option(d)
 }

@@ -1,4 +1,4 @@
-package com.jjh.collections.imp.classes
+package com.jjh.imp.classes
 
 object ExampleImplicitClassApp extends App {
 
@@ -8,6 +8,6 @@ object ExampleImplicitClassApp extends App {
     def cubed: Int = i * i * i
   }
 
-  println(2.cubed)
-  println(5.squared)
+  println(s"2.cubed: ${2.cubed}")
+  println(s"5 square: ${5 squared}")
 }

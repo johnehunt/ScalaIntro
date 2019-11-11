@@ -1,4 +1,4 @@
-package com.jjh.collections.imp.values
+package com.jjh.imp.params
 
 object ImplicitParamTest {
 

@@ -1,4 +1,4 @@
-package com.jjh.collections.imp.function
+package com.jjh.imp.function
 
 class StringRepeated(original: String) {
   def repeat(times: Int): String = {

@@ -1,4 +1,4 @@
-package com.jjh.collections.imp.objects
+package com.jjh.imp.objects
 
 case class Address(street: String, number: Int)
 

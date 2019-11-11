@@ -1,4 +1,4 @@
-package com.jjh.collections.lazily
+package com.jjh.lazily
 
 import java.util.Date
 
@@ -9,13 +9,13 @@ class Record {
 
 object LazyValTest extends App {
   val r1 = new Record()
-  println(r1)
-  println(new Date().toString)
+  println(s"record: $r1")
+  println(s"new Date(): ${new Date}")
   println("Sleep for 2 seconds")
   Thread.sleep(2000)
-  println(r1.now)
+  println(s"r1.now: ${r1.now}")
   println("Sleep for another 2 seconds")
   Thread.sleep(2000)
-  println(new Date().toString)
-  println(r1.now)
+  println(s"2nd new Date(): ${new Date}")
+  println(s"r1.now: ${r1.now}")
 }

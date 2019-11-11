@@ -1,4 +1,4 @@
-package com.jjh.collections.imp.objects
+package com.jjh.imp.objects
 
 object Test extends App {
   import LabelMaker._
