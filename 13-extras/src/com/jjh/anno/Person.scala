@@ -1,4 +1,4 @@
-package com.jjh.collections.anno
+package com.jjh.anno
 
 import java.io.Serializable
 
