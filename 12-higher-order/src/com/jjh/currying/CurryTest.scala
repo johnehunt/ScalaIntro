@@ -1,5 +1,13 @@
 package com.jjh.currying
 
+object Temp {
+  def basicSum(x: Int, y: Int): Int = x * y
+  println(basicSum(2, 3))
+
+  def sum(x: Int)(y: Int): Int = x * y
+  println(sum(2)(3))
+}
+
 class CurryTest {
 
   def printer(): Unit = { println("Hi") }
