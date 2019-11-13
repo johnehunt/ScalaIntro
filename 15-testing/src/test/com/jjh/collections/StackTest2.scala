@@ -2,7 +2,7 @@ package com.jjh.collections
 
 import org.scalatest._
 
-class Stack2Test extends FunSuite with BeforeAndAfter {
+class StackTest2 extends FunSuite with BeforeAndAfter {
 
   before {
     println("Before behaviour")
