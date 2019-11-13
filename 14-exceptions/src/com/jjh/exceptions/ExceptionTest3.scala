@@ -8,7 +8,7 @@ object ExceptionTest3 extends App {
     try {
       new Rational(5, 0)
     } catch {
-      case RuntimeException => new Rational(5, 1)
+      case e: RuntimeException => new Rational(5, 1)
     }
   println(r1)
 }
