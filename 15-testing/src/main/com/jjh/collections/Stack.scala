@@ -7,10 +7,11 @@ class Stack[T] {
   val MAX = 10
   private var contents = new ListBuffer[T]
 
-  def push(o: T) {
-    if (!full)
+  def push(o: T): Unit = {
+    if (!full) {
       contents.prepend(o)
-    else
+      () // Make sure return Unit
+    } else
       throw new IllegalStateException("Stack Full")
   }
 
