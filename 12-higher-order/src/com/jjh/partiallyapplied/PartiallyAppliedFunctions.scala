@@ -1,4 +1,4 @@
-package com.jjh.partial
+package com.jjh.partiallyapplied
 
 object PartiallyAppliedFunctions extends App {
 
