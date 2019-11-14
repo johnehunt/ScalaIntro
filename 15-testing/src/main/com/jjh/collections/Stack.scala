@@ -5,11 +5,11 @@ class Stack[T] {
   import scala.collection.mutable.ListBuffer
 
   val MAX = 10
-  private val contents = new ListBuffer[T]
+  private var contents = new ListBuffer[T]
 
   def push(o: T) {
     if (!full)
-      o +: contents
+      contents.prepend(o)
     else
       throw new IllegalStateException("Stack Full")
   }
