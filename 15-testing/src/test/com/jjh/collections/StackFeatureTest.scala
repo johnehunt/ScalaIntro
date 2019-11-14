@@ -34,8 +34,8 @@ class StackFeatureTest extends FeatureSpec with GivenWhenThen {
       val emptyStack = new Stack[Int]
 
       When("when pop is invoked on the stack")
-      Then("NoSuchElementException should be thrown")
-      intercept[NoSuchElementException] {
+      Then("IllegalStateException should be thrown")
+      intercept[IllegalStateException] {
         emptyStack.pop()
       }
 
