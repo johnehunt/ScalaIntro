@@ -2,7 +2,7 @@ package com.jjh.collections
 
 import org.scalatest._
 
-class StackTest2 extends FunSuite with BeforeAndAfter {
+class StackTest2 extends FunSuite with BeforeAndAfter with BeforeAndAfterAll {
 
   before {
     println("Before behaviour")
@@ -10,6 +10,14 @@ class StackTest2 extends FunSuite with BeforeAndAfter {
 
   after {
     println("After behaviour")
+  }
+
+  override def beforeAll(): Unit = {
+    println("Before All")
+  }
+
+  override def afterAll(): Unit = {
+    println("After All")
   }
 
   test("Create an empty Stack") {
