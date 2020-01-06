@@ -3,7 +3,8 @@ package com.jjh.marker
 trait Decorator
 trait Service
 
-// Note immutable is a built in marker trait
+// Note immutable was s a built in marker trait prior to Scala 2.12
+trait Immutable
 
 trait MyReader extends Immutable with Decorator {
   def read(): Int
