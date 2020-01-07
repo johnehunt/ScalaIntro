@@ -1,4 +1,4 @@
-package com.jjh.collections.currency
+package com.jjh.currency
 
 object CurrencyTestApp extends App {
   val c1 = new Currency(12)

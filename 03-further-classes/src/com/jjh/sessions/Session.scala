@@ -1,4 +1,4 @@
-package com.jjh.collections.sessions
+package com.jjh.sessions
 
 /**
  * The Companion class

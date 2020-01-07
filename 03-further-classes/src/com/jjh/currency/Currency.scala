@@ -1,4 +1,4 @@
-package com.jjh.collections.currency
+package com.jjh.currency
 
 class Currency(a: Long, d: String) {
 

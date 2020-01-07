@@ -1,4 +1,4 @@
-package com.jjh.collections.sessions
+package com.jjh.sessions
 
 /**
  * Application to illustrate the use of the Session Object 9and Companion Class.

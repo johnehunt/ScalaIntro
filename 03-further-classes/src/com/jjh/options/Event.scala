@@ -1,4 +1,4 @@
-package com.jjh.collections.option
+package com.jjh.options
 
 import java.util.Date
 

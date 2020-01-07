@@ -1,4 +1,4 @@
-package com.jjh.collections.patternmatching
+package com.jjh.patternmatching
 
 /*
  * Example illustrating the flexibility

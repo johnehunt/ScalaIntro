@@ -1,4 +1,4 @@
-package com.jjh.collections.iteration
+package com.jjh.flowofcontrol
 
 object ForLoopTest extends App {
 
