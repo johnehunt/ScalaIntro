@@ -10,6 +10,7 @@ import scala.collection.mutable
  */
 object MutableSetTest extends App {
   // Note style of reference again
+  // This makes things clear - which set you are using
   val songs = mutable.Set("Chasing Pavements",
     "Rumour Has it",
     "Turning Tables")
