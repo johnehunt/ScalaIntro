@@ -9,5 +9,5 @@ object ExampleImplicitClassApp extends App {
   }
 
   println(s"2.cubed: ${2.cubed}")
-  println(s"5 square: ${5 squared}")
+  println(s"5.square: ${5.squared}")
 }
