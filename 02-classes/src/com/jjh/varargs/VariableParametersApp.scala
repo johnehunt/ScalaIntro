@@ -12,6 +12,10 @@ object VariableParametersApp extends App {
   printer.echo("John", "was", "here")
 }
 
+/**
+ * Note order of definition of class and object
+ * is not significant.
+ */
 class Printer {
   /*
    * If last parameter has a trailing * then this can be a variable

@@ -1,23 +1,45 @@
 package com.jjh.math
 
 /**
- * Class illustrating some method definitions.
+ * Class illustrating some method definitions / styles.
  */
 class Math {
 
+  /**
+   * Basic method definition.
+   */
   def print(): Unit = {
     println("math")
   }
 
+  /**
+   * Method returning a value.
+   * Note the method is defined with parentheses and thus
+   * cannot be called using parentheses.
+   * @return a string representing the class
+   */
   def asString: String =  {
     // returns last value
     "Math"
   }
 
+  /**
+   * Method take a single parameter of type Int
+   * and returning an Int.
+   * @param value the value to negate
+   * @return the negated value
+   */
   def negate(value: Int): Int = {
     -value
   }
 
+  /**
+   * Method with two paramters both of type Int.
+   * Returns an Int
+   * @param x
+   * @param y
+   * @return
+   */
   def max(x: Int, y: Int): Int = {
     println(s"--> max($x, $y)")
     if (x > y)
@@ -26,6 +48,9 @@ class Math {
       y
   }
 
+  /**
+   * Method illustrating short hand form of declaration.
+   */
   def max2(x: Int, y: Int): Int = if (x>y) x else y
 
 }
@@ -36,7 +61,8 @@ object MathApp extends App {
   // Methods with no parameters
   math.print() // parenthesis are optional
   math.print
-  println(math.asString) // cannot use parenthases
+  println(math.asString)
+  // println(math.asString()) // Warning! cannot use parentheses on this method
 
   // Method with a parameter
   println(math.negate(5))

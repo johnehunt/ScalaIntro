@@ -1,5 +1,10 @@
 package com.jjh.people
 
+/**
+ * Person class with an auxilary constrcutor
+ * @param name Name of Person
+ * @param age Age of person
+ */
 class Person2(val name: String, var age: Int) {
 
   // Auxiliary Constructor - provides default age

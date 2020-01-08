@@ -1,5 +1,9 @@
 package com.jjh.people
 
+/**
+ * CLass illustrating the free standing code that will be
+ * executed when an instance of the class is created.
+ */
 class Person3(val name: String, var age: Int) {
 
   // Auxiliary Constructor - provides default age

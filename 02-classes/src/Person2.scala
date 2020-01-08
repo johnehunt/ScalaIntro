@@ -1,3 +1,6 @@
+/**
+ * Class illustrating custom setter and getter methods.
+ */
 class Person2 {
 
   private var _name = ""

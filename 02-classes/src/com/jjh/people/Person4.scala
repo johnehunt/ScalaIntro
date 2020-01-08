@@ -1,5 +1,11 @@
 package com.jjh.people
 
+/**
+ * CLass illustrating the use of toString
+ * to provide a string representation of
+ * instance of the class - useful for printing
+ * and logging.
+ */
 class Person4(val name: String, var age: Int) {
 
   // Auxiliary Constructor - provides default age
