@@ -16,7 +16,7 @@ object BookServiceApp2 extends App {
   // Allow us to specify the max wait time in seconds
   import scala.concurrent.duration._
 
-  val book = Await.result(future, 2 seconds)
+  val book = Await.result(future, 2.seconds)
 
   // print the result of awaiting
   println(s"Book: $book")
