@@ -7,14 +7,6 @@ case class Number(num: Double) extends Expr
 case class UnOp(operator: String, arg: Expr) extends Expr
 case class BinOp(operator: String, left: Expr, right: Expr) extends Expr
 
-object TypeDescripter {
-  def describe(x: Expr): String = x match {
-    case Var(_) => "A Variable"
-    case Number(_) => "A Number"
-    case _ => "something else"
-  }
-}
-
 object SealedTypeDescripter {
   def describe(x: Expr): String = x match {
     case Var(name) => s"Variable $name"
@@ -25,7 +17,7 @@ object SealedTypeDescripter {
 }
 
 object SealedClassExampleApp extends App {
-  import TypeDescripter._
+  import SealedTypeDescripter._
 
   println(describe(Var("count")))
   println(describe(Number(44)))
