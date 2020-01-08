@@ -1,3 +1,6 @@
+/**
+ * Illustrates the use of a var
+ */
 object HelloWorldMessageApp2 extends App {
 
   var message = "Hello Scala World!"
