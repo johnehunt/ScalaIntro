@@ -13,7 +13,7 @@ object DegreeTest extends App {
    d.printValue()
    d.printer()
 
-   // Assign the degree instance to a bval of type Model
+   // Assign the degree instance to a val of type Model
    val m1: Model = d
    m1.printer()
 
