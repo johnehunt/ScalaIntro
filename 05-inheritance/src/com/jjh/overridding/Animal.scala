@@ -13,8 +13,12 @@ class Tiger(override val name: String) extends Cat {
 }
 
 object CatTest extends App {
+  // Store instance of Cat in a variable c of type Cat
   var c = new Cat()
   println(c)
+
+  // Create an instance of Tiger and store into var c
+  // var c holds things of type Cat (or subclasses of Cat)
   c = new Tiger("Tigger")
   println(c)
 }
