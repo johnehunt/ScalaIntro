@@ -5,5 +5,5 @@ object Test extends App {
   val a = Address("High Street", 10)
   // method label uses Label maker to convert to labels
   // implicitly uses the object instance of AddressLabelMaker
-  println(label(a))
+  println(printLabel(a))
 }
