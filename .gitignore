@@ -45,3 +45,4 @@ autom4te.cache
 
 *.iml
 /.idea/
+/modules.xml
