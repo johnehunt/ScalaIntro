@@ -1,7 +1,7 @@
 package com.jjh.exceptions
 
 /**
- * Example of using exception handlign with
+ * Example of using exception handling with
  * Scala source to read data
  * from a file.
  */
