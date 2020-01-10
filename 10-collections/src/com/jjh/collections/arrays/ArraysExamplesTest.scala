@@ -18,9 +18,19 @@ object ArraysExamplesTest extends App {
   // myArray.apply(0) has the short hand form
   // myArray(0)
   for (i <- 0 to myArray.length - 1)
-    print(myArray(i))
+    println(myArray(i))
 
-  println("\n---------------------------")
+  println("---------------------------")
+
+  for (i <- 0 until myArray.length )
+    println(myArray(i))
+
+  println("---------------------------")
+
+  for (i <- myArray.indices)
+    println(myArray(i))
+
+  println("---------------------------")
 
   // More concise format
   val numberArray = Array("Zero ", "One ", "Two")
