@@ -8,6 +8,10 @@ package com.jjh.collections.arrays
 object ArraysExamplesTest extends App {
   // val myArray: Array[String] = new Array[String](3)
   val myArray = new Array[String](3)
+  println(s"myArray: $myArray") // Prints array instance format e.g. [Ljava.lang.String;@5a39699c
+  println(s"myArray(0): ${myArray(0)}") // Prints null
+
+  println("-" * 30)
 
   // long hand form
   // myArray.update(o) = "Hello";
@@ -20,17 +24,17 @@ object ArraysExamplesTest extends App {
   for (i <- 0 to myArray.length - 1)
     println(myArray(i))
 
-  println("---------------------------")
+  println("-" * 30)
 
   for (i <- 0 until myArray.length )
     println(myArray(i))
 
-  println("---------------------------")
+  println("-" * 30)
 
   for (i <- myArray.indices)
     println(myArray(i))
 
-  println("---------------------------")
+  println("-" * 30)
 
   // More concise format
   val numberArray = Array("Zero ", "One ", "Two")
@@ -39,8 +43,9 @@ object ArraysExamplesTest extends App {
 
   println()
   numberArray.foreach(print)
+  println()
 
-  println("\n---------------------------")
+  println("-" * 30)
 
   // This is equivalent to the following as Scala automatically
   // calls the factory method apply for you
