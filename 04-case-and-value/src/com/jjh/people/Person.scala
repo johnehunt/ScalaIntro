@@ -11,4 +11,4 @@ package com.jjh.people
  * 5. Default copy method to create a copy of an object
  * 6. Default implementation of the hashcode method
  */
-case class Person(name: String = "John", var age: Int = 47)
+case class Person(name: String = "John", var age: Int = 55)

@@ -5,7 +5,7 @@ package com.jjh.people
  */
 object PersonMatchTest {
   def main(args: Array[String]): Unit = {
-    println(describe(Person("John", 55)))
+    println(describe(Person("John", 56)))
     println(describe(Person("Denise", 53)))
     println(describe(Person("Adam", 20)))
     println(describe(Person("Phoebe", age = 22)))
@@ -14,8 +14,8 @@ object PersonMatchTest {
   }
 
   def describe(x: Any): String = x match {
-    case Person("John", 55) => "Dad"
-    case Person("Denise", 53) => "Mum"
+    case Person("John", _) => "Dad"
+    case Person("Denise", age) => s"Mum is $age"
     case Person("Adam", 20) => "Son"
     case Person("Phoebe", 22) => "Daughter"
     // Use of wild card within pattern
