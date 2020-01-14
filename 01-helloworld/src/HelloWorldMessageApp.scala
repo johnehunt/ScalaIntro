@@ -2,7 +2,7 @@
 
 object HelloWorldMessageApp extends App {
 
-  val message = "Hello Scala World!"
+  val message: String = "Hello Scala World!"
   println(message)
 
 }

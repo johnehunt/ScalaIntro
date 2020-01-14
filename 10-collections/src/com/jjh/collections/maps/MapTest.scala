@@ -4,9 +4,9 @@ object MapTest extends App {
 
   // Set up a map of flight numbers to destinations
   var flights = Map[Int, String]()
-  flights += (121 -> "Miami")
-  flights += (231 -> "Dublin")
-  flights += (456 -> "Paris")
+  flights = flights + (121 -> "Miami")
+  flights = flights.updated(231, "Dublin")
+  flights += (456 -> "Paris")  // Short hand form for update and assign
 
   // Print the Map
   println(s"flights: $flights")

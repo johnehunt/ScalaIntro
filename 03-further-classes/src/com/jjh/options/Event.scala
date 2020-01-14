@@ -20,6 +20,8 @@ class Event(val name: String,
 }
 
 object Event {
+
+  def create(name: String): Event = new Event(name, None)
   def create(name: String, d: Date): Event = new Event(name, Option(d))
 
   def create(name: String, d: Date, state: String): Event =
@@ -27,7 +29,7 @@ object Event {
 }
 
 object EventTestApp extends App {
-  val e1 = Event.create("Trigger", new Date)
+  val e1 = Event.create("Trigger")
   println(e1)
   e1.printDate()
   e1.printDate2

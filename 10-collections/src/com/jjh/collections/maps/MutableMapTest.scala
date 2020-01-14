@@ -7,10 +7,10 @@ object MutableMapTest extends App {
   // Create a mutable map - note style of import and use
   val map = mutable.HashMap[String,String]()
 
-  map += ("UK" -> "London")
-  map += ("FRANCE" -> "Paris")
-  map += ("Spain" -> "Madrid")
-  map += ("USA" -> "Washington. DC")
+  map.addOne("Ireland" -> "Dublin")
+  map += ("UK" -> "London") // += alias for addOne
+  map.addOne("FRANCE" -> "Paris")
+  map.addOne("Spain" -> "Madrid")
 
   println(map)
   println(map.size)
@@ -20,5 +20,5 @@ object MutableMapTest extends App {
   println(map.get("UK")) // Return value for key or None
   println(map("UK")) // Return value for key or NoSuchElementException
   println(map.contains("UK"))
-  println(map.getOrElse("Ireland", "Not known"))
+  println(map.getOrElse("Germany", "Not known"))
 }
