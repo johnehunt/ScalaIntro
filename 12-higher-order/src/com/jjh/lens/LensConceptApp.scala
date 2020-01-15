@@ -45,8 +45,8 @@ object LensIdeaApp extends App {
 
   // Inner most lens
   val streetNumberLens = Lens[Street, Int](
-    get = _.number,
-    set = (a, b) => a.copy(number = b)
+    get = street => street.number,
+    set = (street, i) => street.copy(number = i)
   )
 
   val street = Street("High Street", 10)
@@ -58,8 +58,8 @@ object LensIdeaApp extends App {
 
   // Lens used with address to access a street
   val addressStreetLens = Lens[Address, Street](
-    get = _.street,
-    set = (a, b) => a.copy(street = b)
+    get = address => address.street,
+    set = (address, street) => address.copy(street = street)
   )
 
   // Combining the lenses together
