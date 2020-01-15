@@ -6,7 +6,8 @@ object TailRecursionTest {
 
   def main(args: Array[String]): Unit = {
     // print(factorial(5))
-    bang(4)
+    // bang(4)
+    println(func(5))
   }
 
   def factorial(n: Int): Int =
@@ -19,6 +20,11 @@ object TailRecursionTest {
   def bang(x: Int): Int = {
     if (x == 0) throw new Exception("Bang!")
     else bang(x - 1) +1
+  }
+
+  val func: Int => Int = (x: Int) => {
+    if (x == 1) 1
+    else x * func(x - 1)
   }
 
 }
