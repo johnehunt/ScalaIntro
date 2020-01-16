@@ -16,7 +16,7 @@ object FlatMapApp extends App {
   // Equal to
   val data3 = data.map(list => list.filter(p => p.age < 21))
   println(s"data3: $data3")
-  val data4 = data3.flatten // not removal of emtpy list
+  val data4 = data3.flatten // note removal of empty list
   println(s"data4: $data4")
 
   println("-" * 25)
@@ -28,6 +28,7 @@ object FlatMapApp extends App {
     } recover { case e: Exception => None }
   }.get
 
+  // Illustrates removal of None values by flat part of flatMap
   val info: List[String] = List("1", "2", "foo", "3", "hi")
   println(info)
   val info2: List[Int] = info.flatMap(myToInt)
