@@ -9,9 +9,9 @@ object TrySampleApp4 extends App {
   ).map(n => n * n)
   println(i)
 
-  val j = Try(
+  val j = Try {
     "s".toInt
-  ).recover{
+  }.recover{
     case _: NumberFormatException => 0
   }.map(n => n * n)
   println(j)

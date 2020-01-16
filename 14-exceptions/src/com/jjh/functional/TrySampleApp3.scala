@@ -7,7 +7,7 @@ object TrySampleApp3 extends App {
   println(i)
   // Recover takes a PartialFunction that only handles
   // Exceptions
-  val j = Try ( "s".toInt ) recover {
+  val j = Try { "s".toInt } recover {
     case nfe: NumberFormatException =>
       println(nfe)
       0

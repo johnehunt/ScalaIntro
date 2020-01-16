@@ -16,7 +16,7 @@ object TrySampleApp1 extends App {
 
   import scala.util.{Failure, Success}
 
-  Try ( "123".toInt ) match {
+  Try { "123".toInt } match {
     case Success(value) => println(value)
     case Failure(exception) => println(exception)
   }
