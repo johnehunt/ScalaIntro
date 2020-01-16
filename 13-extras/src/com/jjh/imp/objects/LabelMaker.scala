@@ -17,7 +17,8 @@ object LabelMaker {
   }
   // label method that uses an implicit param
   // either
-  def printLabel[T](t: T)(implicit lm: LabelMaker[T]): String = lm.output(t)
+  def label[T](t: T)(implicit lm: LabelMaker[T]): String = lm.output(t)
+
   // or via short hand form (with unnamed implicit param)
-  // def printLabel[T : LabelMaker](text: T): String = implicitly[LabelMaker[T]].output(text)
+  // def label[T : LabelMaker](text: T): String = implicitly[LabelMaker[T]].output(text)
 }
