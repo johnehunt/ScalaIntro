@@ -1,9 +1,7 @@
 package com.jjh.lens
 
 case class Street(name: String, number: Int)
-
 case class Address(country: String, city: String, street: Street)
-
 case class User(id: Int, address: Address)
 
 object Util {
