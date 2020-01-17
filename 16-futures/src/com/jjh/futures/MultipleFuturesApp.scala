@@ -1,10 +1,10 @@
 package com.jjh.futures
 
-import scala.concurrent._
-import scala.concurrent.duration._
-import scala.concurrent.ExecutionContext.Implicits.global
 
 object MultipleFuturesApp extends App {
+  import scala.concurrent._
+  import scala.concurrent.ExecutionContext.Implicits.global
+
   val f1 = Future{Thread.sleep(1000); 10}
   val f2 = Future{Thread.sleep(2000); 20}
   val all = Future.sequence(Seq(f1, f2))
@@ -12,6 +12,8 @@ object MultipleFuturesApp extends App {
   // foreach will wait for all results to be returned
   // before executing
   all.foreach(x => println(s"All done: $x"))
+
+  import scala.concurrent.duration._
 
   val f3 = Future{Thread.sleep(1000); 10}
   val f4 = Future{Thread.sleep(2000); 20}
