@@ -19,7 +19,7 @@ object MultipleFuturesOnCompleteApp extends App {
     r3 <- f3
   } yield r1 + r2 + r3
 
-  // (c) do whatever you need to do with the result
+  // do whatever you need to do with the result
   result.onComplete {
     case Success(x) => println(s"\nresult = $x")
     case Failure(e) => e.printStackTrace()
