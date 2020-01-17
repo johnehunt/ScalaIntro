@@ -5,7 +5,7 @@ object FlatMapApp extends App {
   val data = List(
     List(Person("John", 55), Person("Denise", 52)),
     List(Person("Phoebe", 22), Person("Adam", 20), Person("Joselyn", 18)),
-    List(Person("Jasmine,", 20), Person("Gryff", 24))
+    List(Person("Jasmine", 20), Person("Gryff", 24))
   )
   println(s"data: $data")
 
@@ -31,6 +31,8 @@ object FlatMapApp extends App {
   // Illustrates removal of None values by flat part of flatMap
   val info: List[String] = List("1", "2", "foo", "3", "hi")
   println(info)
+  val info1 = info.map(myToInt)
+  println(info1)
   val info2: List[Int] = info.flatMap(myToInt)
   println(info2)
 

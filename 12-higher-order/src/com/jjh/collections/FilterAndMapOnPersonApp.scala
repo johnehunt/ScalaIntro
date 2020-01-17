@@ -6,10 +6,10 @@ package com.jjh.collections
  * but on user defined classes.
  */
 object FilterAndMapOnPersonApp extends App {
-  val dad = new Person()
-  val mum = new Person("Denise")
-  val adam = new Person("Adam", 12)
-  val phoebe = new Person("Phoebe", age = 14)
+  val dad = Person()
+  val mum = Person("Denise")
+  val adam = Person("Adam", 12)
+  val phoebe = Person("Phoebe", age = 14)
 
   val family = List(dad, mum, adam, phoebe)
 
