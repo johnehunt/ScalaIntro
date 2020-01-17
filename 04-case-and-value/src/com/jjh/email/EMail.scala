@@ -4,6 +4,9 @@ case class EMail(address: String)
 
 // Custom case class companion object
 object EMail {
+  /**
+   * Transforms input before creating case class instance
+   */
   def apply(addr: String): EMail = {
     println("in apply(addr)")
     new EMail(addr + "@bbc.com")
