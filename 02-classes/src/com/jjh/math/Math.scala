@@ -36,9 +36,6 @@ class Math {
   /**
    * Method with two paramters both of type Int.
    * Returns an Int
-   * @param x
-   * @param y
-   * @return
    */
   def max(x: Int, y: Int): Int = {
     println(s"--> max($x, $y)")
@@ -52,6 +49,12 @@ class Math {
    * Method illustrating short hand form of declaration.
    */
   def max2(x: Int, y: Int): Int = if (x>y) x else y
+
+  /**
+   * Method with default values
+   */
+
+  def add(x: Int, y: Int = 1): Int = x + y
 
 }
 
@@ -74,4 +77,7 @@ object MathApp extends App {
   println("math.max(y=3, x=4): " + math.max(y = 3, x = 4))
   println("math.max(x=3, 4): " + math.max(x=3, 4))
   // println("math.max(x=3, 4): " + math.max(4, x=3)) // invalid as positional param is assumed to be x
+
+  println("math.add(5, 3): " + math.add(5, 3))
+  println("math.add(5): " + math.add(5))
 }
