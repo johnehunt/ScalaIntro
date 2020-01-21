@@ -1,4 +1,4 @@
-package com.jjh.currying
+package currying
 
 /**
  * Now change the second params to take a function

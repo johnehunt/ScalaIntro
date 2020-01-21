@@ -1,4 +1,4 @@
-package com.jjh.currying
+package currying
 
 object Temp {
   def basicSum(x: Int, y: Int): Int = x * y

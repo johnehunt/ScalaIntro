@@ -1,4 +1,4 @@
-package com.jjh.currying
+package currying
 
 class CurryTest3 {
 
