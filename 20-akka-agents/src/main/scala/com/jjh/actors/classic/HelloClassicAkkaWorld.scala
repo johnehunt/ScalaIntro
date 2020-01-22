@@ -13,9 +13,12 @@ class Greeter extends Actor {
 }
 
 object HelloClassicAkkaWorld extends App {
+  // configure the ator system
   val props: Props = Props(new Greeter())
   val system: ActorSystem = ActorSystem("MyActorSystem")
+  // create an actor
   val actor: ActorRef = system.actorOf(props)
+  // send messages to the actor
   actor ! "hello"
   actor ! "Goodbye"
   actor ! 42
