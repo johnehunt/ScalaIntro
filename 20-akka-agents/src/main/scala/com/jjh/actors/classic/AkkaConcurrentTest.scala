@@ -26,6 +26,9 @@ object AkkaConcurrentTest extends App {
   actor2 ! "B"
   actor3 ! "C"
   actor4 ! "X"
+
+  //shutdown the actor system
+  system.terminate()
 }
 
 

@@ -23,4 +23,7 @@ object HelloClassicAkkaWorld extends App {
   actor ! "Goodbye"
   actor ! 42
   actor ! true
+
+  //shutdown the actor system
+  system.terminate()
 }
