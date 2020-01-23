@@ -1,6 +1,5 @@
 package com.jjh.actors.classic.persistence
 
-import akka.actor.Props
 import akka.persistence.{PersistentActor, SnapshotOffer}
 
 sealed trait Operation
@@ -11,7 +10,6 @@ case class Event(operation: Operation)
 case class State(data: String)
 
 class MessagePersistentActor(override val persistenceId: String) extends PersistentActor {
-
   private var state = State("")
 
   private def updateState(event: Event) {
@@ -43,5 +41,6 @@ class MessagePersistentActor(override val persistenceId: String) extends Persist
 }
 
 object MessagePersistentActor {
+  import akka.actor.Props
   def props(id: String): Props = Props(new MessagePersistentActor(id))
 }
