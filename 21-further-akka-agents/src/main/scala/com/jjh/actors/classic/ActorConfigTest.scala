@@ -26,4 +26,7 @@ object ActorConfigTest extends App {
   actor3 ! "C"
   actor4 ! "D"
   println("Messages sent")
+
+  //shutdown the actor system
+  system.terminate()
 }

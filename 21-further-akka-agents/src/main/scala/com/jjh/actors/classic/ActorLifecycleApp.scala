@@ -23,4 +23,7 @@ object ActorLifecycleApp extends App {
   actor ! "hello"
   actor ! "Welcome"
   actor ! "stop"
+
+  //shutdown the actor system
+  system.terminate()
 }

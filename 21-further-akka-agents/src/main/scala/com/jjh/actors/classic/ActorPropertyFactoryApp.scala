@@ -22,4 +22,7 @@ object ActorPropertyFactoryApp extends App {
   val actor = system.actorOf(Calculator.props)
   actor ! 4
   println("Message sent")
+
+  //shutdown the actor system
+  system.terminate()
 }
