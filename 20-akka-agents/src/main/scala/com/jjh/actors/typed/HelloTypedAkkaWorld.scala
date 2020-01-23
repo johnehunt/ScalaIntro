@@ -29,4 +29,7 @@ object HelloTypedAkkaWorld extends App {
   actorSystem ! 42
   actorSystem ! true
 
+  // Cleanly shutdown the actor system
+  actorSystem.terminate()
+
 }

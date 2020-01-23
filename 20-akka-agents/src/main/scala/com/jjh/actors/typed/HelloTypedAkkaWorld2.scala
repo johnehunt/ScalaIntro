@@ -24,4 +24,7 @@ object HelloTypedAkkaWorld2 extends App {
   actorSystem ! Message("Hello World")
   actorSystem ! Message("Goodbye World")
 
+  // Cleanly shutdown the actor system
+  actorSystem.terminate()
+
 }
