@@ -19,6 +19,9 @@ object ActorSupervisionExampleApp extends App {
   Thread.sleep(100)
   actor ! "error"
   actor ! "run"
+
+  //shutdown the actor system
+  system.terminate()
 }
 
 

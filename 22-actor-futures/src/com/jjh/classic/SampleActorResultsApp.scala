@@ -43,4 +43,7 @@ object SampleActorResultsApp extends App {
   val controller = system.actorOf(Controller.props)
   controller ! "start"
   println("End of ReplyTest body")
+
+  //shutdown the actor system
+  system.terminate()
 }

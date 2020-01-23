@@ -48,5 +48,7 @@ object ActorFutureSampleApp extends App {
 
   println("Press Enter to terminate")
   scala.io.StdIn.readLine()
+  //shutdown the actor system
+  system.terminate()
   System.exit(0)
 }
