@@ -13,7 +13,7 @@ class Greeter extends Actor {
 }
 
 object HelloClassicAkkaWorld extends App {
-  // configure the ator system
+  // configure the actor system
   val props: Props = Props(new Greeter())
   val system: ActorSystem = ActorSystem("MyActorSystem")
   // create an actor
