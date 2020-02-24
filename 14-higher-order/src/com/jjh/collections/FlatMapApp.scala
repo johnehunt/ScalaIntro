@@ -2,6 +2,8 @@ package com.jjh.collections
 
 object FlatMapApp extends App {
 
+  println("Starting")
+
   val data = List(
     List(Person("John", 55), Person("Denise", 52)),
     List(Person("Phoebe", 22), Person("Adam", 20), Person("Joselyn", 18)),
@@ -35,5 +37,7 @@ object FlatMapApp extends App {
   println(info1)
   val info2: List[Int] = info.flatMap(myToInt)
   println(info2)
+
+  print("Done")
 
 }
