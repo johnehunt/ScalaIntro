@@ -5,6 +5,10 @@ object FunctionLiteralTests extends App {
   // Note last value assigned is returned as result of
   // function - return type inferred
   var increase = (x: Int) => x + 1
+
+  println(s"increase: $increase")
+  println(s"increase(5): ${increase(5)}")
+
   var y = 1
   println("Initial value of y: " + y)
   y = increase(y)
