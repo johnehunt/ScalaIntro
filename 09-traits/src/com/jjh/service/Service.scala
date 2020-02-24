@@ -10,6 +10,7 @@ class Client(adapter: Adaptor) {
 
 trait Adaptor {
   self: Service =>
+  // this: Service => // sometimes written using this form
   def invoke(): Unit = { printer() }
 }
 
