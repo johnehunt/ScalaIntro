@@ -14,6 +14,7 @@ object ExceptionTest4 {
     throw new RuntimeException("oops")
   } catch {
     case e: RuntimeException => 3
+    case _ => 0
   } finally {
     2
   }
