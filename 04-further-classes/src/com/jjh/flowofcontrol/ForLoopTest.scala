@@ -9,19 +9,30 @@ object ForLoopTest extends App {
   }
   println()
 
-  println("----------------------")
+  println("-" * 25)
 
   // Shorter more common form
   for (i <- 0 to 10) print(s"$i, ")
   println()
 
-  println("----------------------")
+  println("-" * 25)
   val result1 = for (i <- 1 to 5) yield 10 * i
   println(result1)
 
-  println("----------------------")
+  println("-" * 25)
   val result2 = for (n <- List("one", "two", "three")) yield n.substring(0, 2)
-  print(result2)
+  println (result2)
 
+  println("-" * 25)
+  // For loops can have a generator, definition and a filter
+  for (i <- 0 until 10; n = i * i; if (i % 2 == 0)) {
+    println(s"i $i, n $n")
+  }
+
+  println("-" * 25)
+  // can ommit definition or a filter
+  for (i <- 0 until 10; if (i % 2 == 0)) {
+    println(s"i $i")
+  }
 
 }
