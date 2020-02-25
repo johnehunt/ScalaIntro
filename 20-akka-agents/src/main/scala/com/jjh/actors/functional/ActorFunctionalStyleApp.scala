@@ -9,7 +9,7 @@ object ActorFunctionalStyleApp extends App {
 
   val actor: Behavior[Message] = Behaviors.receive(
     (context, message) => {
-      println(s"Recieved the message: $message")
+      println(s"Received the message: $message")
       Behaviors.same // indicates that this behaviour is to be reused
     }
   )

@@ -6,10 +6,10 @@ import akka.actor.Actor
 
 class PrinterActor extends Actor {
   def receive: Receive = {
-    case "A" => for (i <- 1 to 500) print("A")
-    case "B" => for (i <- 1 to 500) print("B")
-    case "C" => for (i <- 1 to 500) print("C")
-    case _ => for (i <- 1 to 500) print("_")
+    case "A" => for (_ <- 1 to 500) print("A")
+    case "B" => for (_ <- 1 to 500) print("B")
+    case "C" => for (_ <- 1 to 500) print("C")
+    case _ => for (_ <- 1 to 500) print("_")
   }
 }
 
