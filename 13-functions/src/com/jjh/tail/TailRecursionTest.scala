@@ -5,10 +5,10 @@ import scala.annotation.tailrec
 object TailRecursionTest {
 
   def main(args: Array[String]): Unit = {
-//    println(factorial(5))
-//    println(factorialTailRec(n = 5))
+    println(factorial(5))
+    println(factorialTailRec(n = 5))
     // bang(4)
-    bangFunc(4)
+//    bangFunc(4)
     println(func(5))
   }
 
@@ -17,15 +17,15 @@ object TailRecursionTest {
   if (n == 1)
     1 // Base case
   else
-  n * factorial(n - 1) // Recursive call
+    n * factorial(n - 1) // Recursive call
 
   @tailrec
-  def factorialTailRec(acc: Int = 0, n: Int): Int =
+  def factorialTailRec(acc: Int = 1, n: Int): Int =
   // Termination condition
     if (n == 1)
       acc // Base case
     else
-    factorialTailRec(acc * n, n - 1) // Tail Recursive call
+      factorialTailRec(acc * n, n - 1) // Tail Recursive call
 
   def bang(x: Int): Int = {
     if (x == 0) throw new Exception("Bang!")
