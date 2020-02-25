@@ -54,6 +54,7 @@ class Supervisor extends Actor {
 
 class ChildActor(name: String) extends Actor {
   override def preStart(): Unit = println(name + " preStart")
+
   override def postStop(): Unit = println(name + " postStop")
 
   override def preRestart(reason: Throwable, message: Option[Any]): Unit = {
