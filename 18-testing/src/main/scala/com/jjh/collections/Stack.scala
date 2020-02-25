@@ -5,7 +5,7 @@ class Stack[T] {
   import scala.collection.mutable.ListBuffer
 
   val MAX = 10
-  private var contents = new ListBuffer[T]
+  private val contents = new ListBuffer[T]
 
   def push(o: T): Unit = {
     if (!full) {

@@ -4,13 +4,13 @@ import org.scalatest._
 
 class StackFeatureTest extends FeatureSpec with GivenWhenThen {
 
-  feature("The user can pop an element off the top of the stack") {
+  Feature("The user can pop an element off the top of the stack") {
 
     info("As a programmer")
     info("I want to be able to pop items off the stack")
     info("So that I can get them in last-in-first-out order")
 
-    scenario("pop is invoked on a non-empty stack") {
+    Scenario("pop is invoked on a non-empty stack") {
 
       Given("a non-empty stack")
       val stack = new Stack[Int]
@@ -28,7 +28,7 @@ class StackFeatureTest extends FeatureSpec with GivenWhenThen {
       assert(stack.size === oldSize - 1)
     }
 
-    scenario("pop is invoked on an empty stack") {
+    Scenario("pop is invoked on an empty stack") {
 
       Given("an empty stack")
       val emptyStack = new Stack[Int]
