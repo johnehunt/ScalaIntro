@@ -10,8 +10,11 @@ import org.scalatest.funspec.AnyFunSpecLike
  * Note you must mix in the trait associated with the testing style; in this
  * case that is the AnyFunSpecLike trait.
  */
-class CalculatorActorTest extends TestKit(ActorSystem("MyTestActorSystem"))
-  with ImplicitSender with AnyFunSpecLike with BeforeAndAfterAll  {
+class CalculatorActorTest
+  extends TestKit(ActorSystem("MyTestActorSystem"))
+  with ImplicitSender
+  with AnyFunSpecLike
+  with BeforeAndAfterAll {
 
   describe("A CalculatorActor") {
     describe("when sent a message") {
