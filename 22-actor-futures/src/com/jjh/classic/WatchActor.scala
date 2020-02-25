@@ -20,4 +20,5 @@ object WatchForDeathApp extends App {
   val system = ActorSystem("MyActorSystem")
   val watcher = system.actorOf(Props(classOf[WatchActor]))
   watcher ! "kill"
+  system.terminate()
 }
