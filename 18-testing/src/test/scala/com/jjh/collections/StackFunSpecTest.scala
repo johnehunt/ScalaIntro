@@ -1,8 +1,8 @@
 package com.jjh.collections
 
-import org.scalatest._
+import org.scalatest.funspec.AnyFunSpec
 
-class StackFunSpecTest extends FunSpec {
+class StackFunSpecTest extends AnyFunSpec {
 
   describe("A Stack") {
     describe("when empty") {
