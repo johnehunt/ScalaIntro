@@ -1,12 +1,12 @@
 package com.jjh.payroll
 
 import org.scalamock.scalatest.MockFactory
-import org.scalatest.FunSpec
+import org.scalatest.funspec.AnyFunSpec
 
 /**
  * An example of using ScalaMock with ScalaTest
  */
-class PayrollTestSuite extends FunSpec with MockFactory {
+class PayrollTestSuite extends AnyFunSpec with MockFactory {
 
   describe("A Payroll System") {
     describe("when presented with a person") {
