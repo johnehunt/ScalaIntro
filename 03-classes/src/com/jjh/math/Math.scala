@@ -76,7 +76,9 @@ object MathApp extends App {
   println("math.max(x=3, y=4): " + math.max(x = 3, y = 4))
   println("math.max(y=3, x=4): " + math.max(y = 3, x = 4))
   println("math.max(x=3, 4): " + math.max(x=3, 4))
-  // println("math.max(x=3, 4): " + math.max(4, x=3)) // invalid as positional param is assumed to be x
+
+  // invalid as positional param is assumed to be x
+  // println("math.max(4, x=3): " + math.max(4, x=3))
 
   println("math.add(5, 3): " + math.add(5, 3))
   println("math.add(5): " + math.add(5))
