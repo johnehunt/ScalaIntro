@@ -19,4 +19,5 @@ object ActorWithParametersApp extends App {
   val system = ActorSystem("MyActorSystem")
   val actor = system.actorOf(Greeter.props(":> "))
   actor ! "hello"
+  system.terminate()
 }
