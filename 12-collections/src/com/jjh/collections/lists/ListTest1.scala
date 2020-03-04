@@ -14,6 +14,8 @@ object ListTest1 extends App {
   val myList0: List[String] = List[String]("One", "Two", "Three")
   val myList1 = List[String]("One", "Two", "Three")
   val myList2 = List("One", "Two", "Three")
+  println(myList2)
+  println(myList2.getClass)
   val myIntList = List(1, 2, 3, 4, 5)
 
   // The list concatenation method that creates a new list
