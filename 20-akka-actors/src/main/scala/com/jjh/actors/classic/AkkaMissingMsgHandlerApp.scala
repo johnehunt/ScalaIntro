@@ -14,7 +14,7 @@ class Greeter2 extends Actor {
  * This actor is used to handle unhandled messages
  */
 class UnhandledMessageActorListener extends Actor {
-  def receive = {
+  def receive: Receive = {
     case u: UnhandledMessage => println("Unhandled message " + u.message)
   }
 }
