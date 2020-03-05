@@ -5,11 +5,13 @@ import akka.actor.typed.{ActorSystem, Behavior}
 
 case class Message(info: String)
 
-object HelloMessageWorld {
-  def apply(): Behavior[Message] = Behaviors.setup(context => new HelloMessageWorld(context))
+object HelloMessageWorldActor {
+  def apply(): Behavior[Message] =
+    Behaviors.setup(context => new HelloMessageWorldActor(context))
 }
 
-class HelloMessageWorld(context: ActorContext[Message]) extends AbstractBehavior[Message](context) {
+class HelloMessageWorldActor(context: ActorContext[Message])
+  extends AbstractBehavior[Message](context) {
 
   override def onMessage(message: Message): Behavior[Message] = {
     println(message.info)
@@ -19,7 +21,8 @@ class HelloMessageWorld(context: ActorContext[Message]) extends AbstractBehavior
 
 object HelloTypedAkkaWorld2 extends App {
 
-  val actorSystem: ActorSystem[Message] = ActorSystem(HelloMessageWorld(), "MyActorSystem")
+  val actorSystem: ActorSystem[Message] =
+    ActorSystem(HelloMessageWorldActor(), "MyActorSystem")
 
   actorSystem ! Message("Hello World")
   actorSystem ! Message("Goodbye World")

@@ -3,11 +3,13 @@ package com.jjh.actors.typed
 import akka.actor.typed.scaladsl.{AbstractBehavior, ActorContext, Behaviors}
 import akka.actor.typed.{ActorSystem, Behavior}
 
-object HelloWorld {
-  def apply(): Behavior[Any] = Behaviors.setup(context => new HelloWorld(context))
+object HelloWorldActor {
+  def apply(): Behavior[Any] =
+    Behaviors.setup(context => new HelloWorldActor(context))
 }
 
-class HelloWorld(context: ActorContext[Any]) extends AbstractBehavior[Any](context) {
+class HelloWorldActor(context: ActorContext[Any])
+  extends AbstractBehavior[Any](context) {
 
   override def onMessage(message: Any): Behavior[Any] = {
     message match {
@@ -22,7 +24,7 @@ class HelloWorld(context: ActorContext[Any]) extends AbstractBehavior[Any](conte
 
 object HelloTypedAkkaWorld extends App {
 
-  val actorSystem: ActorSystem[Any] = ActorSystem(HelloWorld(), "MyActorSystem")
+  val actorSystem: ActorSystem[Any] = ActorSystem(HelloWorldActor(), "MyActorSystem")
 
   actorSystem ! "hello"
   actorSystem ! "Goodbye"
