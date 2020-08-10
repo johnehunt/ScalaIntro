@@ -25,13 +25,13 @@ object ForLoopTest extends App {
 
   println("-" * 25)
   // For loops can have a generator, definition and a filter
-  for (i <- 0 until 10; n = i * i; if (i % 2 == 0)) {
+  for (i <- 0 until 10; n = i * i; if i % 2 == 0) {
     println(s"i $i, n $n")
   }
 
   println("-" * 25)
-  // can ommit definition or a filter
-  for (i <- 0 until 10; if (i % 2 == 0)) {
+  // can omit definition or a filter
+  for (i <- 0 until 10; if i % 2 == 0) {
     println(s"i $i")
   }
 
