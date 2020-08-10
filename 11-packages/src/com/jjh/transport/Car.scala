@@ -18,8 +18,8 @@ package com.jjh.transport {
     }
 
     class TaxiFleet {
-      val c = Car("Skoda", "Octavia")
-      val b = new Bike
+      val c: Car = Car("Skoda", "Octavia")
+      val b: Bike = new Bike
     }
   }
 
