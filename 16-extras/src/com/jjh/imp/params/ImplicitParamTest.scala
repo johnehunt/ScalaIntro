@@ -12,7 +12,7 @@ object ImplicitParamTest {
   }
 
   def printer(content: String)(implicit i: Int): Unit = {
-    for (i <- 0 until i) print(content)
+    for (_ <- 0 until i) print(content)
   }
 
 }
