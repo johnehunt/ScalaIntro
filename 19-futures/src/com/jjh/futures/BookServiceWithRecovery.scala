@@ -2,7 +2,7 @@ package com.jjh.futures
 
 import com.jjh.book._
 
-object BookServiceApp2 extends App {
+object BookServiceWithRecovery extends App {
 
   import scala.concurrent._
   import ExecutionContext.Implicits.global

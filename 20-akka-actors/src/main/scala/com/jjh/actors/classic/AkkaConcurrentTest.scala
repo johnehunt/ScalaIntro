@@ -14,7 +14,7 @@ class PrinterActor extends Actor {
 }
 
 object AkkaConcurrentTest extends App {
-  val props = Props[PrinterActor](new PrinterActor())
+  val props = Props[PrinterActor]
   val system = ActorSystem("MyActorSystem")
   // Set up a group of actors to run concurrently
   val actor1 = system.actorOf(props, name = "actor1")
