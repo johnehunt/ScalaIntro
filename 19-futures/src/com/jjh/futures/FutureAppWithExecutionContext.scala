@@ -2,7 +2,7 @@ package com.jjh.futures
 
 object FutureAppWithExecutionContext extends App {
 
-  import java.util.concurrent.{Executors}
+  import java.util.concurrent.Executors
   import scala.concurrent.{ExecutionContext, Future}
 
   implicit val ec: ExecutionContext =
@@ -13,7 +13,7 @@ object FutureAppWithExecutionContext extends App {
     1
   }(ec)
 
-  f map (println)
+  f map println
 
   println("Press Enter to terminate")
   scala.io.StdIn.readLine()
