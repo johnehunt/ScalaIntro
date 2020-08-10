@@ -46,3 +46,8 @@ autom4te.cache
 *.iml
 /.idea/
 /modules.xml
+/project/build.properties
+*.class
+/project
+/out
+/target
