@@ -1,7 +1,7 @@
 package com.jjh.calc
 
 class Processor(val label: String) {
-  def printIt(i: Int) = println(s"$label: $i")
+  def printIt(i: Int): Unit = println(s"$label: $i")
 }
 
 object ProcesorApp extends App {

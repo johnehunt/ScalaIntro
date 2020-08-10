@@ -3,7 +3,7 @@ package com.jjh.function
 case class Book(author:String, title: String)
 
 object UtilFuncs {
-  val printIt = (s: String) => println(s)
+  val printIt: String => Unit = (s: String) => println(s)
   val printABook = (b: Book) => println(b)
   val printAll = (i: Int, b: Boolean, s: String) => println(s"$i $b $s")
 
