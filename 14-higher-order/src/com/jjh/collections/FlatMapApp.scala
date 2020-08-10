@@ -27,7 +27,7 @@ object FlatMapApp extends App {
     import scala.util.Try
     Try {
       Some(s.toInt)
-    } recover { case e: Exception => None }
+    } recover { case _: Exception => None }
   }.get
 
   // Illustrates removal of None values by flat part of flatMap
