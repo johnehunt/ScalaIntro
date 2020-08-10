@@ -16,7 +16,7 @@ object BookServiceApp3 extends App {
 
   Future {
     BookService.getBook("999")
-  }.recoverWith { case e: Exception => Future {Book("not a book", "Anon", 0.0) }
+  }.recoverWith { case _: Exception => Future {Book("not a book", "Anon", 0.0) }
   }.map(println)
 
   println("Press Enter to terminate")
