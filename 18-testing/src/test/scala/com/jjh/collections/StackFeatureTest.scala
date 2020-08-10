@@ -1,8 +1,10 @@
 package com.jjh.collections
 
 import org.scalatest._
+import org.scalatest.featurespec.AnyFeatureSpec
 
-class StackFeatureTest extends FeatureSpec with GivenWhenThen {
+// class StackFeatureTest extends FeatureSpec with GivenWhenThen { // pre Scalatest 3.2.0
+class StackFeatureTest extends AnyFeatureSpec with GivenWhenThen {
 
   Feature("The user can pop an element off the top of the stack") {
 

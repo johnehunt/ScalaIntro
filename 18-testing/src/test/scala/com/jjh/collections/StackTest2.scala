@@ -1,8 +1,10 @@
 package com.jjh.collections
 
 import org.scalatest._
+import org.scalatest.funsuite.AnyFunSuite
 
-class StackTest2 extends FunSuite with BeforeAndAfter with BeforeAndAfterAll {
+// class StackTest2 extends FunSuite with BeforeAndAfter with BeforeAndAfterAll { // pre Scalatest 3.2.0
+class StackTest2 extends AnyFunSuite with BeforeAndAfter with BeforeAndAfterAll {
 
   before {
     println("Before behaviour")
