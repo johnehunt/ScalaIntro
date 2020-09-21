@@ -5,7 +5,7 @@ class Outer(val age: Int) {
   class Inner {
     val x = 5
     def printer(): Unit = {
-      println(s"Inner.x $x, outer $age")
+      println(s"Inner.x $x, outer.age: $age")
     }
   }
 
