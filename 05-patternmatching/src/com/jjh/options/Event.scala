@@ -14,7 +14,7 @@ class Event(val name: String,
     case None => println("No Date")
   }
 
-  def printDate2: Unit = println(date getOrElse "No Date")
+  def printDate2(): Unit = println(date getOrElse "No Date")
 
   override def toString: String = s"Event($name, $date, $state)"
 }
