@@ -40,7 +40,7 @@ object TuplesTest extends App {
 
   println("-----------------------------------")
   // Tuple iteration
-  tuple.productIterator.foreach { println _ }
+  tuple.productIterator.foreach(println)
 
   println("-----------------------------------")
   // Tuple Extraction
