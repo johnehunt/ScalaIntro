@@ -42,7 +42,7 @@ object Grades {
       source match {
         case Some(x) =>
           source.get.close()
-          println("Finished Reading Data")
+          println(s"Finished Reading Data $x")
         case None => println("Problem with source")
       }
     }

@@ -1,7 +1,7 @@
 package com.jjh.higher
 
 object Processor {
-  val apply = (n: Int, f: Int => Int) => f(n)
+  val apply: (Int, Int => Int) => Int = (n: Int, f: Int => Int) => f(n)
 }
 
 object Test extends App {

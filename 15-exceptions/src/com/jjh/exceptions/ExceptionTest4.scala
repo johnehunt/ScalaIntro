@@ -13,7 +13,7 @@ object ExceptionTest4 {
   def func2(): Int = try {
     throw new RuntimeException("oops")
   } catch {
-    case e: RuntimeException => 3
+    case _: RuntimeException => 3
     case _ => 0
   } finally {
     2
