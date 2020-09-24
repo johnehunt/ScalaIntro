@@ -7,7 +7,7 @@ package com.jjh.value
  * @param value The size of Meter
  */
 case class Meter(value: Double) extends AnyVal {
-  def +(m: Meter) : Meter = Meter(value + m.value)
+  def +(m: Meter) : Double = value + m.value
 }
 
 object Main extends App {
@@ -16,5 +16,5 @@ object Main extends App {
   val y = Meter(4.3)
   println("Adding Value instances together")
   val z = x + y
-  println("Result: " + z + " has the value: " + z.value)
+  println("Result: " + z)
 }
