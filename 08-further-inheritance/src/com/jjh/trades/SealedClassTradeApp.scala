@@ -10,7 +10,7 @@ case class Swaption(data: String) extends Trade
 object SealedTypeDescripter {
   def describe(x: Trade): String = x match {
     case EquityTrade(name) => s"EquityTrade $name"
-    case FxTrade(curr1, curr2) => s"FxTrade $curr1, curr2"
+    case FxTrade(curr1, curr2) => s"FxTrade $curr1, $curr2"
     case InterestRateSwap(5.0, _) => "An InterestRateSwap for 5.0"
     case Swaption("Bermudan") => "A Bermudan Swaption"
   }
