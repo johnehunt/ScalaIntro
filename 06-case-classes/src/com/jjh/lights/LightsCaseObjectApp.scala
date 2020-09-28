@@ -1,5 +1,8 @@
 package com.jjh.lights
-
+/*
+ * Set up case objects to represent
+ * the colours of a traffic light
+ */
 case object Red
 case object Yellow
 case object Green
