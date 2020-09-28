@@ -12,6 +12,8 @@ object MatchTestApp4 {
     println(getAsInt(s1))
     println(getAsInt(i1))
     println(getAsInt(d1))
+
+    getType("John")
   }
 
   def getAsInt(x: Any): Int = x match {
@@ -19,6 +21,13 @@ object MatchTestApp4 {
     case i: Int => i
     case d: Double => d.toInt
     case _ => -1
+  }
+
+  // If only interested in the type
+  def getType(x: Any): Unit = x match {
+    case _: String => println("Its a String")
+    case _: Int => println("Its an Int")
+    case _ => println("its something else")
   }
 
 }
