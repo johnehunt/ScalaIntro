@@ -1,5 +1,9 @@
 package com.jjh.patternmatching
 
+object Session {
+  val name = "John"
+}
+
 /*
  * Example illustrating the flexibility
  * in the constant patterns used with the case
@@ -8,6 +12,7 @@ package com.jjh.patternmatching
 object MatchTestApp2 {
 
   def main(args: Array[String]): Unit = {
+    println(describe(Session))
     println(describe(5))
     println(describe(true))
     println(describe("hello"))

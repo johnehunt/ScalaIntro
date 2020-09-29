@@ -14,6 +14,14 @@ object MatchTestApp4 {
     println(getAsInt(d1))
 
     getType("John")
+
+    val x: Any = "42"
+    val res = x match {
+      case s: String => s.toInt
+      case i: Int => i
+      case d: Double => d.toInt
+      case _ => -1
+    }
   }
 
   def getAsInt(x: Any): Int = x match {
@@ -25,7 +33,9 @@ object MatchTestApp4 {
 
   // If only interested in the type
   def getType(x: Any): Unit = x match {
-    case _: String => println("Its a String")
+    case _: String =>
+      println("Its a String")
+      println("And here")
     case _: Int => println("Its an Int")
     case _ => println("its something else")
   }
