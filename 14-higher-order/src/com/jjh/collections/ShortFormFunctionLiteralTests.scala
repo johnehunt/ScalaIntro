@@ -1,4 +1,4 @@
-package com.jjh.function
+package com.jjh.collections
 
 object ShortFormFunctionLiteralTests extends App {
   // Can use as function literals with various Scala libraries
