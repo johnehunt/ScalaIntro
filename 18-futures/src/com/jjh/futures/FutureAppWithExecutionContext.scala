@@ -5,7 +5,7 @@ object FutureAppWithExecutionContext extends App {
   import java.util.concurrent.Executors
   import scala.concurrent.{ExecutionContext, Future}
 
-  implicit val ec: ExecutionContext =
+  val ec: ExecutionContext =
     ExecutionContext.fromExecutor(Executors.newFixedThreadPool(10))
 
   val f = Future {
@@ -13,7 +13,7 @@ object FutureAppWithExecutionContext extends App {
     1
   }(ec)
 
-  f map println
+  f.foreach(println)(ec)
 
   println("Press Enter to terminate")
   scala.io.StdIn.readLine()
