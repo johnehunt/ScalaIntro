@@ -4,8 +4,8 @@ case class Book(author:String, title: String)
 
 object UtilFuncs {
   val printIt: String => Unit = (s: String) => println(s)
-  val printABook = (b: Book) => println(b)
-  val printAll = (i: Int, b: Boolean, s: String) => println(s"$i $b $s")
+  val printABook: Book => Unit = b => println(b)
+  val printAll: (Int, Boolean, String) => Unit = (i: Int, b: Boolean, s: String) => println(s"$i $b $s")
 
   val printMessage: String => Unit = (s: String) => println(s)
   val printStuff: (Int, Boolean, String) => Unit =

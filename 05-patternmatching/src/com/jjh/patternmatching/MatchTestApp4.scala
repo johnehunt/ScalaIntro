@@ -13,7 +13,7 @@ object MatchTestApp4 {
     println(getAsInt(i1))
     println(getAsInt(d1))
 
-    getType("John")
+    printType("John")
 
     val x: Any = "42"
     val res = x match {
@@ -32,7 +32,7 @@ object MatchTestApp4 {
   }
 
   // If only interested in the type
-  def getType(x: Any): Unit = x match {
+  def printType(x: Any): Unit = x match {
     case _: String =>
       println("Its a String")
       println("And here")

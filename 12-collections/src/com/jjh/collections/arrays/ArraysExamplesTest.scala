@@ -21,12 +21,15 @@ object ArraysExamplesTest extends App {
 
   // myArray.apply(0) has the short hand form
   // myArray(0)
+
+  // To includes number
   for (i <- 0 to myArray.length - 1)
     println(myArray(i))
 
   println("-" * 30)
 
-  for (i <- 0 until myArray.length )
+  // Use until to go to value -1
+  for (i <- 0 until myArray.length)
     println(myArray(i))
 
   println("-" * 30)

@@ -12,7 +12,7 @@ class Greeter(val prompt: String) extends Actor {
 
 object Greeter {
   def props(args: String): Props = Props(classOf[Greeter], args)
-  def props2(args: String): Props = Props(new Greeter(args))
+  def props2(args: String): Props = Props(new Greeter(args)) // Recommended alternative
 }
 
 object ActorWithParametersApp extends App {

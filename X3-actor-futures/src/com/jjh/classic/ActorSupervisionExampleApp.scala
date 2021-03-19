@@ -9,7 +9,6 @@ import akka.actor.ActorSystem
 import akka.actor.OneForOneStrategy
 import akka.actor.Props
 import akka.actor.SupervisorStrategy.Restart
-import akka.actor.actorRef2Scala
 
 object ActorSupervisionExampleApp extends App {
   val props = Props[Supervisor]

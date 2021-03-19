@@ -62,7 +62,7 @@ object MathApp extends App {
   val math = new Math()
 
   // Methods with no parameters
-  math.print() // parenthesis are optional
+  math.print() // parenthesis are optional but recommended
   math.print
   println(math.asString)
   // println(math.asString()) // Warning! cannot use parentheses on this method

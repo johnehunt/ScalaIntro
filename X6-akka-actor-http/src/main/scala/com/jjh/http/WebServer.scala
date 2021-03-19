@@ -30,7 +30,9 @@ object WebServer extends App {
     )
 
   println("Binding to the host and port")
-  val bindingFuture = Http().bindAndHandle(route, "localhost", 8080)
+  // val bindingFuture = Http().bindAndHandle(route, "localhost", 8080) // pre 10.2.0
+
+  val bindingFuture = Http().newServerAt("localhost", 8080).bindFlow(route)
 
   println(s"Server started at http://localhost:8080/users")
 
