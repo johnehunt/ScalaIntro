@@ -13,11 +13,14 @@ object TrySampleApp3 extends App {
   // Exceptions
   val j = Try {
     "s".toInt
-  } recover {
+  }.recover {
     case nfe: NumberFormatException =>
       println(nfe)
       0
-  }
+    case e: Exception =>
+      println(e)
+      -1
+  }.get
   println(j)
 
   // Can swap the exception for something else
