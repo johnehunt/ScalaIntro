@@ -1,6 +1,9 @@
 package com.jjh.actors.classic
 
-import akka.actor.{Actor, ActorRef, ActorSystem, Props}
+import akka.actor.Actor
+import akka.actor.ActorRef
+import akka.actor.ActorSystem
+import akka.actor.Props
 
 class Greeter extends Actor {
   // def receive: Receive = { // Short hand form of following
