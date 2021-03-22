@@ -20,6 +20,10 @@ class Event(val name: String,
   override def toString: String = s"Event($name, $date, $state)"
 }
 
+/**
+ * Companion object used to simplify working with
+ * Option types.
+ */
 object Event {
 
   def create(name: String): Event = new Event(name, None)
