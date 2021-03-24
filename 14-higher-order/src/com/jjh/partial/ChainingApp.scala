@@ -12,12 +12,13 @@ object ChainingApp extends App {
   }
 
   val handlePalindrome: Handler = {
-    case x
-      if x.toString.reverse == x.toString
-    => println("Handling palindrome " + x)
+    case x if x.toString.reverse == x.toString => println("Handling palindrome " + x)
   }
+
   // Create the chain
   val handlerChain = handlePalindrome orElse handleEvens orElse handleOdds
+
+  // Execute the chain
   handlerChain(51)
   handlerChain(42)
   handlerChain(121)
