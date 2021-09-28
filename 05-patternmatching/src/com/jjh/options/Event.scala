@@ -37,7 +37,6 @@ object EventTestApp extends App {
   val e1 = Event.create("Trigger")
   println(e1)
   e1.printDate() // parentheses are optional but recommended
-  e1.printDate2
 
   val e2 = Event create("Open", new Date(), "Waiting")
   println(e2)

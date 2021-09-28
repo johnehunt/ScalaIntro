@@ -9,7 +9,7 @@ object StackTest extends App {
   stack.push(3)
   println(stack)
   println("top: " + stack.top)
-  println("pop: " + stack.pop)
-  println("pop: " + stack.pop)
+  println("pop: " + stack.pop())
+  println("pop: " + stack.pop())
   println(stack)
 }

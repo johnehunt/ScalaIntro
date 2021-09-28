@@ -1,4 +1,4 @@
-package com.jjh.people
+package com.jjh.domain
 
 class Student(val name: String = "John Smith",
               val degree: String = "B.Sc.",

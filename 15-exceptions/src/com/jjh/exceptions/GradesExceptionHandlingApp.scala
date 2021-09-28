@@ -31,7 +31,7 @@ object Grades {
       val path = Paths.get("14-exceptions/" + filename)
       println(s"loading data from ${path.toAbsolutePath}")
       source = Some(Source.fromFile(path.toFile))
-      source.get.getLines.foreach {
+      source.get.getLines().foreach {
         e => marks += e
       }
     } catch {

@@ -1,4 +1,4 @@
-package com.jjh.employees
+package com.jjh.records
 
 abstract class Person(_name: String = "John", var age: Int = 18) {
   // Override inherited toString

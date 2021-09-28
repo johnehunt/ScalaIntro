@@ -9,7 +9,7 @@ package com.jjh.function
  */
 object FunctionTest {
 
-  def main(args: Array[String])  {
+  def main(args: Array[String]): Unit = {
     // Can invoke methods
     println(max(2, 3))
     // Can invoke functions

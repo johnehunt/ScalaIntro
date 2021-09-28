@@ -1,5 +1,7 @@
 package com.jjh.employees
 
+import com.jjh.records
+
 class Person(_name: String = "John", var age: Int = 18) {
   // Override inherited toString
   override def toString: String = s"Person($name, $age)"
@@ -13,7 +15,7 @@ class Person(_name: String = "John", var age: Int = 18) {
 class Graduate(_name: String,
                _age: Int,
                val degree: String,
-               _uni: String) extends Person(_name, _age) {
+               _uni: String) extends records.Person(_name, _age) {
   protected val institution: String = _uni
 
   def this(n: String, a: Int, degree: String) = this(n, a, degree, "Oxford")
@@ -26,7 +28,7 @@ class Graduate(_name: String,
 
 class Employee(n: String,
                a: Int,
-               val company: String) extends Person(n, a) {
+               val company: String) extends records.Person(n, a) {
 
   override def prettyPrint(): Unit =
     println(s"Employee(Name: $name, Age: $age, Company: $company")
@@ -35,7 +37,7 @@ class Employee(n: String,
 
 // Factory object for the Person hierarchy
 object Person {
-  def person(n: String, a: Int, company: String): Person = new Employee(n, a, company)
+  def person(n: String, a: Int, company: String): records.Person = new Employee(n, a, company)
 
-  def person(n: String, a: Int, degree: String, uni: String): Person = new Graduate(n, a, degree, uni)
+  def person(n: String, a: Int, degree: String, uni: String): records.Person = new Graduate(n, a, degree, uni)
 }

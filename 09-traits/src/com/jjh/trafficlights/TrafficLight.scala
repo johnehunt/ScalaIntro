@@ -1,4 +1,4 @@
-package com.jjh.lights
+package com.jjh.trafficlights
 
 trait TrafficLight
 

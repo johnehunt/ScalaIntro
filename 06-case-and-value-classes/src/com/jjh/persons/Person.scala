@@ -1,4 +1,4 @@
-package com.jjh.people
+package com.jjh.persons
 
 /**
  * Defining a case class

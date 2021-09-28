@@ -10,6 +10,6 @@ object Test extends App {
   println(today)
   
   import DaysOfWorkingWeek._
-  def printDay(d: DaysOfWorkingWeek) { println(d) }
+  def printDay(d: DaysOfWorkingWeek): Unit = { println(d) }
   
 }

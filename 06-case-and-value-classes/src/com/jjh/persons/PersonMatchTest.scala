@@ -1,4 +1,4 @@
-package com.jjh.people
+package com.jjh.persons
 
 /**
  * Constructor Patterns - performs a deep comparison

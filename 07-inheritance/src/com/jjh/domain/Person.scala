@@ -1,3 +1,3 @@
-package com.jjh.people
+package com.jjh.domain
 
 class Person(val name: String, val age: Int) extends AnyRef

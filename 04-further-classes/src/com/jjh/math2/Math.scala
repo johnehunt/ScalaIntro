@@ -1,4 +1,4 @@
-package com.jjh.math
+package com.jjh.math2
 
 object Math {
 
@@ -10,7 +10,7 @@ object Math {
       y
   }
 
-  def max2(x: Int, y: Int): Int = if (x>y) x else y
+  def max2(x: Int, y: Int): Int = if (x > y) x else y
 
 }
 

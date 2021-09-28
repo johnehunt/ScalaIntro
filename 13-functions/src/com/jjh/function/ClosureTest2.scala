@@ -3,7 +3,7 @@ package com.jjh.function
 object Utils {
   var increment: Int => Int = (x: Int) => x + 3
 
-  def resetFunc() {
+  def resetFunc(): Unit = {
     // Local variable is bound and stored on the heap
     // as it is used within the function body
     val addition = 50

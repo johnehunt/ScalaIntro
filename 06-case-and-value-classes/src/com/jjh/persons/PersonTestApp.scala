@@ -1,4 +1,4 @@
-package com.jjh.people
+package com.jjh.persons
 
 /**
  * Working with objects of the Class Person.

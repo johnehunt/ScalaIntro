@@ -12,7 +12,7 @@ object LabelMaker {
   // and an instance created from it for use with implicit params
   implicit object AddressLabelMaker extends LabelMaker[Address] {
     def output(address: Address): String = {
-       address.number + " @ " + address.street
+       s"${address.number} @ ${address.street}"
     }
   }
   // label method that uses an implicit param

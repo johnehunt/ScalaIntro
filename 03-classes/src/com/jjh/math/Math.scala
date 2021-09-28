@@ -63,7 +63,7 @@ object MathApp extends App {
 
   // Methods with no parameters
   math.print() // parenthesis are optional but recommended
-  math.print
+  math.print   // style has been deprecated since 1.13.3
   println(math.asString)
   // println(math.asString()) // Warning! cannot use parentheses on this method
 
