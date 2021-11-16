@@ -5,7 +5,7 @@ class Person(val name: String) {
 }
 
 trait Logger {
-  log()
+  log() // Trains can run code when used
   def log():Unit = { println("Created") }
 }
 
