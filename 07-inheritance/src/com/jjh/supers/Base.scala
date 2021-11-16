@@ -7,6 +7,10 @@ class Base {
 }
 
 class Derived extends Base {
+  /**
+   * Overriding the print()
+   * method in Base class
+   */
   override def print(): Unit = {
     println("Derived before")
     super.print()
