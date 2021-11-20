@@ -1,7 +1,7 @@
 package com.jjh.logging
 
 class Person(val name: String) {
-  override def toString =  s"Person[ $name ]"
+  override def toString() =  s"Person[ $name ]"
 }
 
 trait Logger {
