@@ -5,7 +5,7 @@ import akka.actor.ActorSystem
 import akka.actor.Actor
 
 class PrinterActor extends Actor {
-  def receive: Receive = {
+  def receive(): Receive = {
     case "A" => for (_ <- 1 to 100) print("A")
     case "B" => for (_ <- 1 to 100) print("B")
     case "C" => for (_ <- 1 to 100) print("C")
