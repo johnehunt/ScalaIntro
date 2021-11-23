@@ -44,6 +44,9 @@ object ArraysExamplesTest extends App {
   for (i <- 0 to 2)
     print(numberArray(i))
 
+  for (i <- numberArray)
+    print(i)
+
   println()
   numberArray.foreach(print)
   println()
