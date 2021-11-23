@@ -1,5 +1,9 @@
 package com.jjh.collections.vector
 
+/**
+ * Vectors often faster than lists as more like an array list
+ * List is more like a linked list
+ */
 object SampleVectorApp extends App {
 
   val numbers = Vector(1, 2, 3)
