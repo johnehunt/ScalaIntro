@@ -8,9 +8,9 @@ object StringDirection extends Enumeration {
 }
 
 object Test2 extends App {
-  val d = Direction.North
+  val d = StringDirection.North
   println(d)
   println(d.id)
-  val d3 = Direction.withName("n")
+  val d3 = StringDirection.withName("n")
   println(d3)
 }
