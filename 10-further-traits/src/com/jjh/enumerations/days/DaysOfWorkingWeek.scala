@@ -6,7 +6,7 @@ object DaysOfWorkingWeek extends Enumeration {
 }
 
 object Test extends App {
-  val today = DaysOfWeek.Monday
+  val today = DaysOfWorkingWeek.Monday
   println(today)
   
   import DaysOfWorkingWeek._
