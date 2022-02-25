@@ -1,7 +1,5 @@
 package com.jjh.people
 
-import com.jjh.persons
-
 /**
  *  A person who uses our application.
  *
@@ -12,10 +10,10 @@ import com.jjh.persons
 class Person(val name: String, var age: Int)
 
 object TestPersonApp extends App {
-  val p1 = new persons.Person(name ="John", age = 56)
+  val p1 = new Person(name ="John", age = 56)
   println(p1.name + " is " + p1.age)
-  val p2 = new persons.Person("Denise", 53)
+  val p2 = new Person("Denise", 53)
   println(p2.name + " is " + p2.age)
-  val p3 = new persons.Person("Jasmine", 21)
+  val p3 = new Person("Jasmine", 21)
   println(p3.name + " is " + p3.age)
 }

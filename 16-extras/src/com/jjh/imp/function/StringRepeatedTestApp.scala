@@ -1,6 +1,7 @@
 package com.jjh.imp.function
 
 import scala.annotation.tailrec
+import scala.language.implicitConversions
 
 class StringRepeated(original: String) {
   def repeat(times: Int): String = {

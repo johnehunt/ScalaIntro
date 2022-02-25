@@ -1,6 +1,7 @@
 package com.jjh.imp.function
 
 import java.util.Date
+import scala.language.implicitConversions // use since Scala 2.10 otherwise get warning
 
 case class Event(name: String, date: Option[Date] = None, state: String = "New") {
   def printDate(): Unit = date match {

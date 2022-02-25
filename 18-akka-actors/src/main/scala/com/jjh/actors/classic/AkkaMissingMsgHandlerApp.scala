@@ -4,7 +4,7 @@ import akka.actor.{Actor, ActorRef, ActorSystem, Props}
 import akka.actor.UnhandledMessage
 
 class Greeter2 extends Actor {
-  def receive(): Receive = {
+  def receive: Receive = {
     case "hello" => println("Hello World")
     case "Goodbye" => println("Goodbye World")
   }
@@ -14,7 +14,7 @@ class Greeter2 extends Actor {
  * This actor is used to handle unhandled messages
  */
 class UnhandledMessageActorListener extends Actor {
-  def receive(): Receive = {
+  def receive: Receive = {
     case u: UnhandledMessage => println("Unhandled message " + u.message)
   }
 }

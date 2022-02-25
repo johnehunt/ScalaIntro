@@ -7,7 +7,7 @@ import akka.actor.Props
 
 class Greeter extends Actor {
   // def receive: Receive = { // Short hand form of following
-  def receive(): PartialFunction[Any, Unit] = {
+  def receive: PartialFunction[Any, Unit] = {
     case "hello" => println("Hello World")
     case "Goodbye" => println("Goodbye World")
     case 42 => println("Its the answer to Everything")

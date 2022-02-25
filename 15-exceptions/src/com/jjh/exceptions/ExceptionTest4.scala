@@ -14,9 +14,9 @@ object ExceptionTest4 {
     throw new RuntimeException("oops")
   } catch {
     case _: RuntimeException => 3
-    case _ => 0
+    case _ => 0  // equivalent of case_: Throwable => 0 which is considered better pratice
   } finally {
-    2
+    println("In finally")
   }
 
   def main(args: Array[String]): Unit = {
