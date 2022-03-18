@@ -10,7 +10,7 @@ package com.jjh.people
 class Person(val name: String, var age: Int)
 
 object TestPersonApp extends App {
-  val p1 = new Person(name ="John", age = 56)
+  val p1 = new Person(name ="John", age = 57)
   println(p1.name + " is " + p1.age)
   val p2 = new Person("Denise", 53)
   println(p2.name + " is " + p2.age)
