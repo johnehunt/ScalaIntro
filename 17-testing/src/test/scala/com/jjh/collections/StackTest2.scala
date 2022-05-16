@@ -3,15 +3,16 @@ package com.jjh.collections
 import org.scalatest._
 import org.scalatest.funsuite.AnyFunSuite
 
-// class StackTest2 extends FunSuite with BeforeAndAfter with BeforeAndAfterAll { // pre Scalatest 3.2.0
-class StackTest2 extends AnyFunSuite with BeforeAndAfter with BeforeAndAfterAll {
+import scala.collection.mutable
 
-  before {
-    println("Before behaviour")
+class StackTest2 extends AnyFunSuite with BeforeAndAfterEach with BeforeAndAfterAll {
+
+  override def beforeEach(): Unit = {
+    println("Before each")
   }
 
-  after {
-    println("After behaviour")
+  override def afterEach(): Unit = {
+    println("After each")
   }
 
   override def beforeAll(): Unit = {
@@ -23,22 +24,23 @@ class StackTest2 extends AnyFunSuite with BeforeAndAfter with BeforeAndAfterAll 
   }
 
   test("Create an empty Stack") {
-    val stack = new Stack[Int]()
+    val stack = new mutable.Stack[Int]()
     assert(0 == stack.size)
   }
 
   test("Push a value onto the stack and check size is 1") {
-    val stack = new Stack[Int]
+    val stack = new mutable.Stack[Int]
     stack.push(42)
     assert(1 == stack.size)
   }
 
   test("Push value onto stack and pop it off again") {
-    val stack = new Stack[Int]
+    val stack = new mutable.Stack[Int]
     stack.push(32)
     val x = stack.pop()
     assert(32 == x)
   }
 
 }
+
 
