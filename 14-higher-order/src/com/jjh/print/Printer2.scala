@@ -15,7 +15,7 @@ object Printer2TestApp extends App {
   import Printer2._
   val file = new File("data.txt")
   write(file) {
-    writer => writer.println(new Date)
+    writer => writer.println(new Date())
   }
 
   val fileWriter = write(file)_
